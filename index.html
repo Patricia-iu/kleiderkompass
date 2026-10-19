@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kleiderkompass</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="text-center p-3 site-header text-light">
+      <img
+        src="images/kleiderkompass-logo-hell.svg"
+        alt=""
+        width="80"
+        height="62"
+      />
+
+      <h1>Kleiderkompass</h1>
+      <nav>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="#registrierung">Spende registrieren</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#ablauf">So funktioniert's</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#fragen">Fragen und Hilfe</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container-fluid p-3">
+      <div class="row">
+        <div class="col-lg-4 col-sm-12">
+          <section class="einstieg">
+            <p class="einstieg-label">Kleidung weitergeben</p>
+            <h2>Gib deiner Kleidung ein zweites Leben.</h2>
+            <p>
+              Registriere deine Kleiderspende und wähle ein Krisengebiet, das du
+              unterstützen möchtest.
+            </p>
+            <p>
+              Bring die Kleidung zu unserer Geschäftsstelle oder wähle eine
+              Abholung in deiner Nähe.
+            </p>
+          </section>
+        </div>
+        <div class="col-lg-8 col-sm-12">
+          <section id="registrierung">
+            <h2>Spende registrieren</h2>
+            <form id="spendenformular">
+              <div class="mb-3">
+                <label for="kleidung">Art der Kleidung:</label>
+                <select
+                  id="kleidung"
+                  name="kleidung"
+                  class="form-select"
+                  required
+                >
+                  <option value="">Bitte auswählen</option>
+                  <option value="jacken">Jacken und Mäntel</option>
+                  <option value="oberteile">Pullover und Oberteile</option>
+                  <option value="hosen">Hosen</option>
+                  <option value="kinderkleidung">Kinderkleidung</option>
+                  <option value="gemischt">Gemischte Kleidung</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="region">Krisengebiet</label>
+                <select id="region" name="region" class="form-select" required>
+                  <option value="">Bitte auswählen</option>
+                  <option value="ukraine">Ukraine</option>
+                  <option value="sudan">Sudan</option>
+                  <option value="afghanistan">Afghanistan</option>
+                </select>
+              </div>
+              <fieldset class="mb-3">
+                <legend>Übergabeart</legend>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    id="geschaeftsstelle"
+                    name="uebergabe"
+                    value="geschaeftsstelle"
+                    required
+                  />
+
+                  <label class="form-check-label" for="geschaeftsstelle"
+                    >Übergabe an der Geschäftsstelle</label
+                  >
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    id="abholung"
+                    name="uebergabe"
+                    value="abholung"
+                  />
+                  <label class="form-check-label" for="abholung"
+                    >Abholung</label
+                  >
+                </div>
+              </fieldset>
+              <div id="abholadresse">
+                <div class="mb-3">
+                  <label for="strasse">Straße und Hausnummer</label>
+                  <input
+                    type="text"
+                    id="strasse"
+                    name="strasse"
+                    class="form-control"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="plz">Postleitzahl</label>
+                  <input
+                    type="text"
+                    id="plz"
+                    name="plz"
+                    class="form-control"
+                    inputmode="numeric"
+                    pattern="[0-9]{5}"
+                    maxlength="5"
+                    title="Bitte geben Sie eine gültige Postleitzahl ein"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="ort">Ort</label>
+                  <input type="text" id="ort" name="ort" class="form-control" />
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Spende registrieren
+              </button>
+            </form>
+          </section>
+        </div>
+      </div>
+      <section id="ablauf">
+        <h2>So funktioniert's</h2>
+        <div class="row g-3">
+          <div class="col-md-4">
+            <div class="ablauf-schritt">
+              <span class="schritt-nummer">1</span>
+              <h3 class="h5">Spende auswählen</h3>
+              <p>Wähle die Kleidungsart und ein Krisengebiet aus.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="ablauf-schritt">
+              <span class="schritt-nummer">2</span>
+              <h3 class="h5">Übergabe festlegen</h3>
+              <p>
+                Wähle die Übergabe an der Geschäftsstelle oder die Abholung aus.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="ablauf-schritt">
+              <span class="schritt-nummer">3</span>
+              <h3 class="h5">Angaben bestätigen</h3>
+              <p>
+                Schließe die Registrierung ab und prüfe deine Angaben auf der
+                Bestätigungsseite.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="fragen">
+        <h2>Fragen und Hilfe</h2>
+        <details>
+          <summary>Welche Angaben brauche ich bei einer Übergabe?</summary>
+          <p>
+            Wähle die Kleidungsart, das Krisengebiet und die Übergabe an der
+            Geschäftsstelle. Eine Abholadresse ist nicht erforderlich.
+          </p>
+        </details>
+
+        <details>
+          <summary>Welche Angaben brauche ich bei einer Abholung?</summary>
+          <p>
+            Zusätzlich zur Kleidungsart und zum Krisengebiet benötigen wir
+            Straße und Hausnummer, Postleitzahl und Ort.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Welche Postleitzahlen sind für die Abholung möglich?
+          </summary>
+          <p>
+            Die Postleitzahl muss aus fünf Ziffern bestehen und mit 10 beginnen.
+            Das entspricht den ersten zwei Ziffern unserer Geschäftsstellen-PLZ
+            10105.
+          </p>
+        </details>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <h2 class="h5">Kleiderkompass</h2>
+            <p>
+              Kleidung weitergeben und Menschen in Krisengebieten unterstützen.
+            </p>
+            <p>Ein fiktives Studienprojekt.</p>
+          </div>
+
+          <div class="col-md-6">
+            <h2 class="h5">Unsere Geschäftsstelle</h2>
+            <p>
+              Musterstraße 7<br />
+              10105 Berlin
+            </p>
+            <p>
+              Telefon: 030 xxxxxx<br />
+              E-Mail: kontakt@kleiderkompass.example
+            </p>
+          </div>
+        </div>
+
+        <nav aria-label="Rechtliche Hinweise" class="mt-4">
+          <ul>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>

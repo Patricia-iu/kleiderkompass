@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 280" fill="none">
+  <title>Kleiderkompass – Kleiderbügel mit Richtungspfeil</title>
+  <path d="M143 54C147 7 221 7 221 54C221 80 185 84 185 106V124" stroke="#1E2C4A" stroke-width="18" stroke-linecap="round"/>
+  <path d="M208 135L196 128C189 124 180 124 173 128L31 209C5 224 17 249 40 249H155" stroke="#1E2C4A" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M247 156L329 204C359 221 346 249 320 249H207" stroke="#1E2C4A" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M135 194L242 145L183 248L176 204Z" fill="#E0A93B"/>
+</svg>

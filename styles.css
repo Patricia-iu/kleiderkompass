@@ -1,0 +1,164 @@
+/* Allgemeine Stile */
+body {
+  background-color: #fafaf8;
+  color: #1e2c4a;
+}
+
+main {
+  max-width: 1200px;
+  margin: 32px auto;
+}
+
+section {
+  margin-bottom: 24px;
+}
+
+/* Header-Stile */
+.site-header {
+  background-color: #1e2c4a;
+}
+
+.site-header a {
+  color: #ffffff;
+}
+
+.site-header a:hover {
+  color: #e0a93b;
+}
+
+/* Footer-Stile */
+footer {
+  background-color: #e6ebf3;
+  padding: 32px 24px;
+  text-align: left;
+  border-top: 2px dashed #e0a93b;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer li {
+  display: inline-block;
+  margin: 0 8px;
+}
+
+footer a {
+  color: #1e2c4a;
+}
+
+/* index.html */
+#spendenformular,
+.bestaetigungsuebersicht {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 8px;
+  border: 1px solid #c5cddc;
+}
+
+.einstieg{
+    background-color: #e6ebf3;
+    padding: 32px 24px;
+    border-radius: 8px;
+    border: 2px dashed #e0a93b;
+}
+
+.einstieg-label {
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.einstieg h2 {
+    margin-bottom: 24px;
+}
+
+.einstieg p:last-child {
+    margin-bottom: 0px;
+}
+
+/* Fragen und Hilfe */
+#fragen details {
+  background-color: #ffffff;
+  margin-bottom: 12px;
+  padding: 16px 20px;
+  border-radius: 8px;
+  border: 1px solid #c5cddc;
+}
+
+#fragen summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#fragen summary:hover {
+  color: #55617a;
+}
+
+#fragen details[open] {
+  border-color: #e0a93b;
+}
+
+#fragen details p {
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+/* So funktioniert's */
+.ablauf-schritt {
+  height: 100%;
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 8px;
+  border: 1px solid #c5cddc;
+}
+
+.schritt-nummer {
+  display: inline-block;
+  padding: 6px 14px;
+  margin-bottom: 16px;
+  background-color: #e0a93b;
+  color: #1e2c4a;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.ablauf-schritt p {
+  margin-bottom: 0;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #1e2c4a;
+  border-color: #1e2c4a;
+}
+
+.btn-primary:hover {
+  background-color: #1e2c4a;
+  border-color: #1e2c4a;
+}
+
+/* Gewähle Übergabeart */
+#spendenformular .form-check-input:checked {
+  background-color: #1e2c4a;
+  border-color: #1e2c4a;
+}
+
+/* Aktives Eingabefeld */
+#spendenformular .form-control:focus,
+#spendenformular .form-select:focus {
+  border-color: #e0a93b;
+}
+
+/* Anpassung Handys */
+@media screen and (max-width: 767px) {
+  #spendenformular,
+  .bestaetigungsuebersicht {
+    padding: 16px;
+  }
+
+  .site-header .list-inline-item {
+    display: block;
+    margin: 8px;
+  }
+}
