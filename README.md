@@ -29,8 +29,3 @@ Bitte ausschließlich fiktive Testdaten verwenden.
 ## Technik
 
 HTML, CSS, JavaScript und Bootstrap 5.3.8.
-
-## Logo
-
-Das SVG-Logo wurde mit KI-Unterstützung aus einem generierten
-Logoentwurf erstellt.
